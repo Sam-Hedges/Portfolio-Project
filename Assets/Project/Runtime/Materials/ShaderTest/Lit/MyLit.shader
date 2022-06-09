@@ -13,6 +13,11 @@ Shader "SamHedges/MyLit" {
 
 			HLSLPROGRAM // Begin HLSL code
 
+			#pragma vertex Vertex
+			#pragma fragment Fragment
+
+			#include "MyLitForwardLitPass.hlsl"
+
 			ENDHLSL
 		}
 	}
